@@ -1,0 +1,525 @@
+<ui:composition template="../WEB-INF/pages/main-temp.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:define name="main-head">
+        <meta name="Description" content="Iranian Handwoven Carpets - Explore our exquisite collection at our online store"/>
+        <h:outputStylesheet library="leaflet" name="leaflet.css"/>
+        <h:outputScript library="leaflet" name="leaflet.js"/>
+    </ui:define>
+    <ui:define name="main-body">
+        <div class="owl-carousel owl-carousel-no-nav" data-items="1" data-loop="true" data-nav="true" data-autoplay="3000">
+            <div class="theme-hero-area _h-75vh">
+                <div class="theme-hero-area-bg-wrap">
+                    <div class="theme-hero-area-bg" style="background-image:url(img/lvjzhhoijj4_1500x800.jpg);"></div>
+                    <div class="theme-hero-area-mask theme-hero-area-mask-strong"></div>
+                </div>
+                <div class="theme-hero-area-body theme-hero-area-body-vert-center">
+                    <div class="container">
+                        <div class="theme-hero-text _pt-50 theme-hero-text-center theme-hero-text-white">
+                            <div class="theme-hero-text-header">
+                                <h2 class="theme-hero-text-title _mb-10 theme-hero-text-title-xl">مسکو</h2>
+                                <p class="theme-hero-text-subtitle">بازتاب های نورانی</p>
+                            </div>
+                            <a class="btn _tt-uc _mt-20 btn-white btn-ghost btn-lg" href="#">کشف کردن</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="theme-hero-area _h-75vh">
+                <div class="theme-hero-area-bg-wrap">
+                    <div class="theme-hero-area-bg" style="background-image:url(img/city-landmark-lights-night_1500x800.jpg);"></div>
+                    <div class="theme-hero-area-mask theme-hero-area-mask-strong"></div>
+                </div>
+                <div class="theme-hero-area-body theme-hero-area-body-vert-center">
+                    <div class="container">
+                        <div class="theme-hero-text _pt-50 theme-hero-text-center theme-hero-text-white">
+                            <div class="theme-hero-text-header">
+                                <h2 class="theme-hero-text-title _mb-10 theme-hero-text-title-xl">نیویورک</h2>
+                                <p class="theme-hero-text-subtitle">به سیب بزرگ خوش آمدید</p>
+                            </div>
+                            <a class="btn _tt-uc _mt-20 btn-white btn-ghost btn-lg" href="#">بیشتر پیدا کنید</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="theme-hero-area _h-75vh">
+                <div class="theme-hero-area-bg-wrap">
+                    <div class="theme-hero-area-bg" style="background-image:url(img/architecture-asia-asian-blur-236148_1500x800.jpg);"></div>
+                    <div class="theme-hero-area-mask theme-hero-area-mask-strong"></div>
+                </div>
+                <div class="theme-hero-area-body theme-hero-area-body-vert-center">
+                    <div class="container">
+                        <div class="theme-hero-text _pt-50 theme-hero-text-center theme-hero-text-white">
+                            <div class="theme-hero-text-header">
+                                <h2 class="theme-hero-text-title _mb-10 theme-hero-text-title-xl">کیوتو</h2>
+                                <p class="theme-hero-text-subtitle">روح رمز و راز</p>
+                            </div>
+                            <a class="btn _tt-uc _mt-20 btn-white btn-ghost btn-lg" href="#">اکنون سفر کنید</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="theme-page-section _pt-0 theme-page-section-gray theme-page-section-xxl">
+            <div class="container">
+                <div class="front _mb-90 _mt--90 _mt-mob--60">
+                    <div class="theme-search-area-tabs">
+                        <div class="tabbable">
+                            <ul class="nav _mh-mob-5 nav-tabs nav-center nav-white nav-active-white nav-no-br nav-lg nav-mob-inline" role="tablist">
+                                <li class="active" role="presentation">
+                                    <a aria-controls="SearchAreaTabs-1" role="tab" data-toggle="tab" href="#SearchAreaTabs-1">هتل</a>
+                                </li>
+                                <li role="presentation">
+                                    <a aria-controls="SearchAreaTabs-2" role="tab" data-toggle="tab" href="#SearchAreaTabs-2">خانه ها</a>
+                                </li>
+                                <li role="presentation">
+                                    <a aria-controls="SearchAreaTabs-3" role="tab" data-toggle="tab" href="#SearchAreaTabs-3">پروازها</a>
+                                </li>
+                                <li role="presentation">
+                                    <a aria-controls="SearchAreaTabs-4" role="tab" data-toggle="tab" href="#SearchAreaTabs-4">ماشین </a>
+                                </li>
+                                <li role="presentation">
+                                    <a aria-controls="SearchAreaTabs-5" role="tab" data-toggle="tab" href="#SearchAreaTabs-5">تجربیات </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content _ph-25 _pt-30 _pb-15 _bg-w _bsh-xxl _bsh-light tab-content-curved">
+                                <div class="tab-pane active" id="SearchAreaTabs-1" role="tab-panel">
+                                    <div class="theme-search-area">
+                                        <div class="theme-search-area-form">
+                                            <div class="row" data-gutter="10">
+                                                <div class="col-md-3 ">
+                                                    <div class="theme-search-area-section first theme-search-area-section-curved theme-search-area-section-fade-white">
+                                                        <div class="theme-search-area-section-inner">
+                                                            <i class="theme-search-area-section-icon lin lin-location-pin"></i>
+                                                            <input class="theme-search-area-section-input typeahead" type="text" placeholder="موقعیت هتل" data-provide="typeahead"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 ">
+                                                    <div class="row" data-gutter="10">
+                                                        <div class="col-md-6 ">
+                                                            <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-fade-white">
+                                                                <div class="theme-search-area-section-inner">
+                                                                    <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                                                                    <input class="theme-search-area-section-input datePickerStart _mob-h" value="تاریخ رفت"  type="text" placeholder="تاریخ رفت"  />
+                                                                    <input class="theme-search-area-section-input _desk-h mobile-picker" value="تاریخ"  type="text"  />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 ">
+                                                            <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-fade-white">
+                                                                <div class="theme-search-area-section-inner">
+                                                                    <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                                                                    <input class="theme-search-area-section-input datePickerEnd _mob-h"  type="text" placeholder="تاریخ برگشت"  />
+                                                                    <input class="theme-search-area-section-input _desk-h mobile-picker" value="تاریخ برگشت"  type="text"  />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 ">
+                                                    <div class="row" data-gutter="10">
+                                                        <div class="col-md-6 ">
+                                                            <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-fade-white quantity-selector" data-increment="اتاق ها">
+                                                                <div class="theme-search-area-section-inner">
+                                                                    <i class="theme-search-area-section-icon lin lin-tag"></i>
+                                                                    <input class="theme-search-area-section-input" value="1 اتاق" type="text"/>
+                                                                    <div class="quantity-selector-box" id="HotelSearchRooms">
+                                                                        <div class="quantity-selector-inner">
+                                                                            <p class="quantity-selector-title">اتاق ها</p>
+                                                                            <ul class="quantity-selector-controls">
+                                                                                <li class="quantity-selector-decrement">
+                                                                                    <a href="#">-</a>
+                                                                                </li>
+                                                                                <li class="quantity-selector-current">1</li>
+                                                                                <li class="quantity-selector-increment">
+                                                                                    <a href="#">+</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 ">
+                                                            <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-fade-white quantity-selector" data-increment="مهمان">
+                                                                <div class="theme-search-area-section-inner">
+                                                                    <i class="theme-search-area-section-icon lin lin-people"></i>
+                                                                    <input class="theme-search-area-section-input" value="2 مهمان" type="text"/>
+                                                                    <div class="quantity-selector-box" id="HotelSearch مهمان">
+                                                                        <div class="quantity-selector-inner">
+                                                                            <p class="quantity-selector-title">مهمان</p>
+                                                                            <ul class="quantity-selector-controls">
+                                                                                <li class="quantity-selector-decrement">
+                                                                                    <a href="#">-</a>
+                                                                                </li>
+                                                                                <li class="quantity-selector-current">1</li>
+                                                                                <li class="quantity-selector-increment">
+                                                                                    <a href="#">+</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1 ">
+                                                    <button class="theme-search-area-submit _mt-0 theme-search-area-submit-no-border theme-search-area-submit-curved theme-search-area-submit-primary">جستجو</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="theme-search-area-options _mob-h theme-search-area-options-center clearfix">
+                                            <div class="btn-group theme-search-area-options-list" data-toggle="buttons">
+                                                <label class="btn btn-primary active">
+                                                    <input type="radio" name="hotel-options" id="hotel-option-1" /> هرجایی
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="hotel-options" id="hotel-option-2"/>کسب و کار
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="hotel-options" id="hotel-option-3"/>خانواده
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="hotel-options" id="hotel-option-4"/>لوکس
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="hotel-options" id="hotel-option-5"/>بودجه
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="hotel-options" id="hotel-option-6"/>رومانتیک
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="SearchAreaTabs-2" role="tab-panel">
+                                    <div class="theme-search-area">
+                                        <div class="theme-search-area-form">
+                                            <div class="row" data-gutter="10">
+                                                <div class="col-md-4 ">
+                                                    <div class="theme-search-area-section first theme-search-area-section-curved theme-search-area-section-fade-white">
+                                                        <div class="theme-search-area-section-inner">
+                                                            <i class="theme-search-area-section-icon lin lin-location-pin"></i>
+                                                            <input class="theme-search-area-section-input typeahead" type="text" placeholder="موقعیت آپارتمان" data-provide="typeahead"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 ">
+                                                    <div class="row" data-gutter="10">
+                                                        <div class="col-md-4 ">
+                                                            <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-fade-white">
+                                                                <div class="theme-search-area-section-inner">
+                                                                    <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                                                                    <input class="theme-search-area-section-input datePickerStart _mob-h" value="تاریخ رفت" id="datepicker-Depart" type="text" placeholder="تاریخ رفت"  />
+                                                                    <input class="theme-search-area-section-input _desk-h mobile-picker" value="تاریخ"  type="text"  />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 ">
+                                                            <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-fade-white">
+                                                                <div class="theme-search-area-section-inner">
+                                                                    <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                                                                    <input class="theme-search-area-section-input datePickerEnd _mob-h"  type="text" placeholder="تاریخ برگشت"  />
+                                                                    <input class="theme-search-area-section-input _desk-h mobile-picker" value="تاریخ برگشت"  type="text"  />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 ">
+                                                            <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-fade-white quantity-selector" data-increment="مهمان">
+                                                                <div class="theme-search-area-section-inner">
+                                                                    <i class="theme-search-area-section-icon lin lin-people"></i>
+                                                                    <input class="theme-search-area-section-input" value="2 مهمان" type="text"/>
+                                                                    <div class="quantity-selector-box" id="RoomSearch مهمان">
+                                                                        <div class="quantity-selector-inner">
+                                                                            <p class="quantity-selector-title">مهمان</p>
+                                                                            <ul class="quantity-selector-controls">
+                                                                                <li class="quantity-selector-decrement">
+                                                                                    <a href="#">-</a>
+                                                                                </li>
+                                                                                <li class="quantity-selector-current">1</li>
+                                                                                <li class="quantity-selector-increment">
+                                                                                    <a href="#">+</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1 ">
+                                                    <button class="theme-search-area-submit _mt-0 theme-search-area-submit-no-border theme-search-area-submit-curved theme-search-area-submit-primary">جستجو</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="theme-search-area-options _mob-h theme-search-area-options-center clearfix">
+                                            <div class="btn-group theme-search-area-options-list" data-toggle="buttons">
+                                                <label class="btn btn-primary active">
+                                                    <input type="radio" name="room-options" id="room-option-1" /> هرجایی
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="room-options" id="room-option-2"/>کل خانه
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="room-options" id="room-option-3"/>اتاق خصوصی
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="room-options" id="room-option-4"/>فضای به اشتراک گذاشته شده
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="SearchAreaTabs-3" role="tab-panel">
+                                    <div class="theme-search-area">
+                                        <div class="theme-search-area-form">
+                                            <div class="row" data-gutter="10">
+                                                <div class="col-md-5 ">
+                                                    <div class="row" data-gutter="10">
+                                                        <div class="col-md-6 ">
+                                                            <div class="theme-search-area-section first theme-search-area-section-curved theme-search-area-section-fade-white">
+                                                                <div class="theme-search-area-section-inner">
+                                                                    <i class="theme-search-area-section-icon lin lin-location-pin"></i>
+                                                                    <input class="theme-search-area-section-input typeahead" type="text" placeholder="مبدا" data-provide="typeahead"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 ">
+                                                            <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-fade-white">
+                                                                <div class="theme-search-area-section-inner">
+                                                                    <i class="theme-search-area-section-icon lin lin-location-pin"></i>
+                                                                    <input class="theme-search-area-section-input typeahead" type="text" placeholder="مقصد" data-provide="typeahead"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 ">
+                                                    <div class="row" data-gutter="10">
+                                                        <div class="col-md-4 ">
+                                                            <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-fade-white">
+                                                                <div class="theme-search-area-section-inner">
+                                                                    <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                                                                    <input class="theme-search-area-section-input datePickerStart _mob-h" value="تاریخ رفت" id="datepicker-tour-Depart" type="text" placeholder="تاریخ رفت" />
+                                                                    <input class="theme-search-area-section-input _desk-h mobile-picker" value="تاریخ"  type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 ">
+                                                            <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-fade-white">
+                                                                <div class="theme-search-area-section-inner">
+                                                                    <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                                                                    <input class="theme-search-area-section-input datePickerEnd _mob-h"  type="text" placeholder="تاریخ برگشت" id="datepicker-tour-Return"/>
+                                                                    <input class="theme-search-area-section-input _desk-h mobile-picker" value="تاریخ برگشت"  type="text"  />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 ">
+                                                            <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-fade-white quantity-selector" data-increment="مسافر">
+                                                                <div class="theme-search-area-section-inner">
+                                                                    <i class="theme-search-area-section-icon lin lin-people"></i>
+                                                                    <input class="theme-search-area-section-input" value="1 مسافر" type="text"/>
+                                                                    <div class="quantity-selector-box" id="FlySearchPassengers">
+                                                                        <div class="quantity-selector-inner">
+                                                                            <p class="quantity-selector-title">مسافران</p>
+                                                                            <ul class="quantity-selector-controls">
+                                                                                <li class="quantity-selector-decrement">
+                                                                                    <a href="#">-</a>
+                                                                                </li>
+                                                                                <li class="quantity-selector-current">1</li>
+                                                                                <li class="quantity-selector-increment">
+                                                                                    <a href="#">+</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1 ">
+                                                    <button class="theme-search-area-submit _mt-0 theme-search-area-submit-no-border theme-search-area-submit-curved theme-search-area-submit-primary">جستجو</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="theme-search-area-options theme-search-area-options-center clearfix">
+                                            <div class="btn-group theme-search-area-options-list" data-toggle="buttons">
+                                                <label class="btn btn-primary active">
+                                                    <input type="radio" name="flight-options" id="flight-option-1" />رفت و برگشت
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="flight-options" id="flight-option-2"/>یک طرفه
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="SearchAreaTabs-4" role="tab-panel">
+                                    <div class="theme-search-area">
+                                        <div class="theme-search-area-form">
+                                            <div class="row" data-gutter="10">
+                                                <div class="col-md-7 ">
+                                                    <div class="row" data-gutter="10">
+                                                        <div class="col-md-6 ">
+                                                            <div class="theme-search-area-section first theme-search-area-section-curved theme-search-area-section-fade-white">
+                                                                <div class="theme-search-area-section-inner">
+                                                                    <i class="theme-search-area-section-icon lin lin-location-pin"></i>
+                                                                    <input class="theme-search-area-section-input typeahead" type="text" placeholder="مبدا" data-provide="typeahead"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 ">
+                                                            <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-fade-white">
+                                                                <div class="theme-search-area-section-inner">
+                                                                    <i class="theme-search-area-section-icon lin lin-location-pin"></i>
+                                                                    <input class="theme-search-area-section-input typeahead" type="text" placeholder="مقصد" data-provide="typeahead"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 ">
+                                                    <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-fade-white">
+                                                        <div class="theme-search-area-section-inner">
+                                                            <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                                                            <input class="theme-search-area-section-input datePickerStart _mob-h" value="تاریخ رفت" id="data-car-back" type="text" placeholder="تاریخ رفت"/>
+                                                            <input class="theme-search-area-section-input _desk-h mobile-picker" value="تاریخ"  type="text"  />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 ">
+                                                    <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-fade-white">
+                                                        <div class="theme-search-area-section-inner">
+                                                            <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                                                            <input class="theme-search-area-section-input datePickerEnd _mob-h"  type="text" placeholder="تاریخ برگشت" id="data-car"/>
+                                                            <input class="theme-search-area-section-input _desk-h mobile-picker" value="تاریخ برگشت"  type="text" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1 ">
+                                                    <button class="theme-search-area-submit _mt-0 theme-search-area-submit-no-border theme-search-area-submit-curved theme-search-area-submit-primary">جستجو</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="theme-search-area-options _mob-h theme-search-area-options-center clearfix">
+                                            <div class="btn-group theme-search-area-options-list" data-toggle="buttons">
+                                                <label class="btn btn-primary active">
+                                                    <input type="radio" name="car-options" id="car-option-1" /> هرجایی
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="car-options" id="car-option-2"/>کوپه
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="car-options" id="car-option-3"/>هاچ بک
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="car-options" id="car-option-4"/>ماشین شاسی بلند
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="car-options" id="car-option-5"/> سواری
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="car-options" id="car-option-6"/> خارجی
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="SearchAreaTabs-5" role="tab-panel">
+                                    <div class="theme-search-area">
+                                        <div class="theme-search-area-form">
+                                            <div class="row" data-gutter="10">
+                                                <div class="col-md-4 ">
+                                                    <div class="theme-search-area-section first theme-search-area-section-curved theme-search-area-section-fade-white">
+                                                        <div class="theme-search-area-section-inner">
+                                                            <i class="theme-search-area-section-icon lin lin-location-pin"></i>
+                                                            <input class="theme-search-area-section-input typeahead" type="text" placeholder="مقصد" data-provide="typeahead"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 ">
+                                                    <div class="row" data-gutter="10">
+                                                        <div class="col-md-4 ">
+                                                            <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-fade-white">
+                                                                <div class="theme-search-area-section-inner">
+                                                                    <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                                                                    <input class="theme-search-area-section-input datePickerStart _mob-h" value="تاریخ رفت" id="date-exp" type="text" placeholder="تاریخ رفت"/>
+                                                                    <input class="theme-search-area-section-input _desk-h mobile-picker" value="تاریخ"  type="text"  />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 ">
+                                                            <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-fade-white">
+                                                                <div class="theme-search-area-section-inner">
+                                                                    <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                                                                    <input class="theme-search-area-section-input datePickerEnd _mob-h"  type="text" placeholder="تاریخ برگشت" id="exo-date-back"/>
+                                                                    <input class="theme-search-area-section-input _desk-h mobile-picker" value="تاریخ برگشت"  type="text"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 ">
+                                                            <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-fade-white quantity-selector" data-increment="مهمان">
+                                                                <div class="theme-search-area-section-inner">
+                                                                    <i class="theme-search-area-section-icon lin lin-people"></i>
+                                                                    <input class="theme-search-area-section-input" value="2 مهمان" type="text"/>
+                                                                    <div class="quantity-selector-box" id="ExpSearch مهمان">
+                                                                        <div class="quantity-selector-inner">
+                                                                            <p class="quantity-selector-title">مهمان</p>
+                                                                            <ul class="quantity-selector-controls">
+                                                                                <li class="quantity-selector-decrement">
+                                                                                    <a href="#">-</a>
+                                                                                </li>
+                                                                                <li class="quantity-selector-current">1</li>
+                                                                                <li class="quantity-selector-increment">
+                                                                                    <a href="#">+</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1 ">
+                                                    <button class="theme-search-area-submit _mt-0 theme-search-area-submit-no-border theme-search-area-submit-curved theme-search-area-submit-primary">جستجو</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="theme-search-area-options _mob-h theme-search-area-options-center clearfix">
+                                            <div class="btn-group theme-search-area-options-list" data-toggle="buttons">
+                                                <label class="btn btn-primary active">
+                                                    <input type="radio" name="exp-options" id="exp-option-1" /> هرجایی
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="exp-options" id="exp-option-2"/>تجربیات
+                                                </label>
+                                                <label class="btn btn-primary">
+                                                    <input type="radio" name="exp-options" id="exp-option-3"/>غوطه ور شدن
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="tttt">tttttttttttttttttttttttt</button>
+                <div  class="row row-col-mob-gap" data-gutter="60" style="height: 300px">
+                    <div id="mapContainer" class="col-md-12 " style="height: 300px"/>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+    <ui:define name="main-foot">
+        <h:outputScript library="leaflet" name="custom-map.js"/>
+    </ui:define>
+</ui:composition>
