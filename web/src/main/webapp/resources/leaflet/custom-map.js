@@ -43,3 +43,9 @@ var buttZoom = document.querySelector('#tttt');
 buttZoom.addEventListener('click' , ()=>{
    map.setView( [35.62,52.42],13);
 })
+
+var inputext = document.querySelector('#intext');
+inputext.addEventListener("input", (e)=>{
+    console.log(e.target.value);
+});
+
